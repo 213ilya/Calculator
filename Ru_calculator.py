@@ -26,6 +26,9 @@ while True:
             if op == "/" and num2 == 0:
                 print("Ошибка: деление на ноль!")
                 continue
+            if op == "^" or "**" and num1 < 0 and num2 != int(num2):
+                print("Ошибка: отрицательное основание с дробной степенью!")
+                continue
 
             if op == "/":
                 result = num1 / num2
@@ -35,8 +38,10 @@ while True:
                 result = num1 + num2
             elif op == "-":
                 result = num1 - num2
+            elif op == "^" or "**":
+                result = num1 ** num2
             else:
-                print("Неправильно, допустимые операции: /, *, +, -. Попробуйте снова.")
+                print("Неправильно, допустимые операции: /, *, +, -, ^ (**). Попробуйте снова.")
                 continue
                 
             print("Результат:", result)
