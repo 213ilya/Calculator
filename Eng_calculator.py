@@ -26,6 +26,10 @@ while True:
             if op == "/" and num2 == 0:
                 print("Error: division by zero!")
                 continue
+                
+            if op == "^" and num1 < 0 and num2 != int(num2):
+                print("Error: negative base with a fractional power!")
+                continue
 
             if op == "/":
                 result = num1 / num2
@@ -35,8 +39,10 @@ while True:
                 result = num1 + num2
             elif op == "-":
                 result = num1 - num2
+            elif op == "^" or "**":
+                result = num1 ** num2
             else:
-                print("Invalid operation. Use /, *, +, -.")
+                print("Invalid operation. Use /, *, +, -, ^ (**).")
                 continue
                 
             print("Result:", result)
