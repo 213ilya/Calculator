@@ -10,7 +10,7 @@ while True:
         while True:
         
             try:
-                num1 = float(input("1-ое число: ").strip())
+                num1 = float(input("1-ое число: "))
             except ValueError:
                 print("Введите число!")
                 continue
@@ -18,7 +18,7 @@ while True:
             op = input("Операция: ").strip()
             
             try:
-                num2 = float(input("2-ое число: ").strip())
+                num2 = float(input("2-ое число: "))
             except ValueError:
                 print("Введите число!")
                 continue
@@ -55,7 +55,7 @@ while True:
         while True:
         
             try:
-                num1 = float(input("1-ое число: ").strip())
+                num1 = float(input("1-ое число: "))
             except ValueError:
                 print("Введите число!")
                 continue
@@ -63,7 +63,7 @@ while True:
             op1 = input("1-ая операция: ").strip()
             
             try:
-                num2 = float(input("2-ое число: ").strip())
+                num2 = float(input("2-ое число: "))
             except ValueError:
                 print("Введите число!")
                 continue
@@ -71,7 +71,7 @@ while True:
             op2 = input("2-ая операция: ").strip()
             
             try:
-                num3 = float(input("3-е число: ").strip())
+                num3 = float(input("3-е число: "))
             except ValueError:
                 print("Введите число!")
                 continue
@@ -123,5 +123,6 @@ while True:
 
     elif option == "3":
         break
+        
     else:
         print("Неправильный выбор, попробуйте снова.")
