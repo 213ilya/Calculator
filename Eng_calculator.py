@@ -10,7 +10,7 @@ while True:
         while True:
         
             try:
-                num1 = float(input("First number: ").strip())
+                num1 = float(input("First number: "))
             except ValueError:
                 print("Enter a number!")
                 continue
@@ -18,7 +18,7 @@ while True:
             op = input("Operation: ").strip()
             
             try:
-                num2 = float(input("Second number: ").strip())
+                num2 = float(input("Second number: "))
             except ValueError:
                 print("Enter a number!")
                 continue
@@ -55,7 +55,7 @@ while True:
         while True:
         
             try:
-                num1 = float(input("First number: ").strip())
+                num1 = float(input("First number: "))
             except ValueError:
                 print("Enter a number!")
                 continue
@@ -63,7 +63,7 @@ while True:
             op1 = input("First operation: ").strip()
             
             try:
-                num2 = float(input("Second number: ").strip())
+                num2 = float(input("Second number: "))
             except ValueError:
                 print("Enter a number!")
                 continue
@@ -71,7 +71,7 @@ while True:
             op2 = input("Second operation: ").strip()
             
             try:
-                num3 = float(input("Third number: ").strip())
+                num3 = float(input("Third number: "))
             except ValueError:
                 print("Enter a number!")
                 continue
@@ -123,5 +123,6 @@ while True:
 
     elif option == "3":
         break
+        
     else:
-        print("No, enter 1, 2 or 3.")
+        print("Invalid option, enter 1, 2 or 3.")
