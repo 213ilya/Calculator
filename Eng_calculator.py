@@ -42,7 +42,7 @@ while True:
             elif op == "^" or "**":
                 result = num1 ** num2
             else:
-                print("Invalid operation. Use /, *, +, -, ^ (**).")
+                print("Invalid operation. Use /, *, +, -, ^.")
                 continue
                 
             print("Result:", result)
