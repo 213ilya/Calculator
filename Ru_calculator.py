@@ -26,6 +26,7 @@ while True:
             if op == "/" and num2 == 0:
                 print("Ошибка: деление на ноль!")
                 continue
+                
             if op == "^" and num1 < 0 and num2 != int(num2):
                 print("Ошибка: отрицательное основание с дробной степенью!")
                 continue
