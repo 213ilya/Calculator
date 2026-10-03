@@ -39,7 +39,7 @@ while True:
                 result = num1 + num2
             elif op == "-":
                 result = num1 - num2
-            elif op == "^" or "**":
+            elif op == "^":
                 result = num1 ** num2
             else:
                 print("Invalid operation. Use /, *, +, -, ^.")
